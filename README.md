@@ -1,3 +1,5 @@
+<img src="app/assets/remix_git.gif"/>
+
 # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)

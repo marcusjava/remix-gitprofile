@@ -9,8 +9,6 @@ const config = {
   },
 };
 
-console.log(process.env.GITHUB_KEY);
-
 export const getUser = async (username?: string): Promise<Types.User> => {
   invariant(username, "Please provide an username as string");
   const res = await fetch(
