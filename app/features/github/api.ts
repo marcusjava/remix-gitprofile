@@ -5,9 +5,11 @@ import pick from "lodash/pick";
 const config = {
   headers: {
     accept: "application/vnd.github.v3+json",
-    Authorization: "token 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",
+    Authorization: `token ${process.env.GITHUB_KEY}`,
   },
 };
+
+console.log(process.env.GITHUB_KEY);
 
 export const getUser = async (username?: string): Promise<Types.User> => {
   invariant(username, "Please provide an username as string");
